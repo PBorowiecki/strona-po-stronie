@@ -3,7 +3,7 @@ html {
   scroll-padding: 4rem;
 }
 body {
-  height: 5000px;
+  /* height: 5000px; */
   overflow-x: hidden;
   font-family: "Catamaran";
   background-color: rgb(246, 248, 246);
@@ -20,8 +20,25 @@ body {
   z-index: -1;
 }
 
+@media (max-width: 990px) {
+  .navbar {
+    background-color: #3e4e3e;
+  }
+}
+
 .navbar {
   transition: all 0.5s;
+}
+
+.nav-link {
+  color: rgba(246, 248, 246, 1);
+  font-weight: 600;
+  font-size: large;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid rgb(156, 102, 0);
+  transition: 0.5s;
 }
 
 .navbar-scrolled {
@@ -33,11 +50,30 @@ body {
   background-color: #3e4e3e;
   border-color: #3e4e3e;
 }
+.btn-primary {
+  --bs-btn-active-bg: rgb(156, 102, 0);
+  --bs-btn-active-border-color: rgb(156, 102, 0);
+}
+.btn:hover {
+  background-color: #7e8a7e;
+  border-color: #7e8a7e;
+}
 
 .c-backgroudn {
   background-color: #3e4e3e;
 }
 
+.c-secondary-background {
+  background-color: rgb(246, 248, 246);
+}
+
+.c-third-background {
+  background-color: #7e8a7e;
+}
+
+.c-secondary-text-header {
+  color: rgb(246, 248, 246);
+}
 .c-text-header {
   color: rgb(156, 102, 0);
 }
@@ -59,3 +95,25 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* koniec galerii */
+
+textarea {
+  resize: none;
+}
+
+.offer-box {
+  /* -webkit-box-shadow: 8px 8px 24px 0px rgb(156, 102, 0, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgb(156, 102, 0, 1);
+  box-shadow: 8px 8px 24px 0px rgb(156, 102, 0, 1); */
+
+  /* -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+-moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1); */
+
+  /* -webkit-box-shadow: 8px 8px 24px 0px rgb(79, 80, 79);
+  -moz-box-shadow: 8px 8px 24px 0px rgb(59, 61, 59);
+  box-shadow: 8px 8px 24px 0px rgb(54, 56, 54); */
+
+  -webkit-box-shadow: 8px 8px 24px 0px rgb(79, 80, 79);
+  -moz-box-shadow: 8px 8px 24px 0px rgb(59, 61, 59);
+  box-shadow: 8px 8px 24px 0px rgb(24, 27, 24);
+}

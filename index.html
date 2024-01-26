@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Strona po stronie</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="./style/style.css" />
     <script
@@ -21,6 +25,15 @@
       defer
       src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("aG6KuPZVR4vqZznQ6");
+      })();
+    </script>
   </head>
   <body>
     <img
@@ -32,7 +45,9 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#navbar">Navbar</a>
+        <a class="navbar-brand" href="#navbar"
+          ><i class="bi bi-book-half px-1"></i> STRONA PO STRONIE</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -47,16 +62,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link" aria-current="page" href="#more-info"
                 >Dowiedz się więcej</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">O mnie</a>
+              <a class="nav-link" href="#offer">Oferta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Kompetencje</a>
+              <a class="nav-link" href="#about">O mnie</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#contact">Kontakt</a>
             </li>
@@ -66,17 +82,24 @@
     </nav>
     <section id="hero">
       <!-- Zdjęcie główne i tytuł -->
-      <div class="container min-vh-100 d-flex align-items-center text-center">
+      <div
+        class="container min-vh-100 d-flex align-items-center text-center"
+        id="navbar"
+      >
         <div class="row">
           <div class="col-12">
             <h1 class="fw-semibold display-1 c-text-header">
               STRONA PO STRONIE
             </h1>
             <h5 class="">Miejsce w którym Twój tekst staje się piękniejszy</h5>
-            <div>
-              <button class="btn btn-primary btn-custom" type="submit">
+            <div class="container py-3">
+              <a
+                href="#more-info"
+                class="btn btn-primary btn-custom"
+                role="button"
+              >
                 Dowiedz się więcej
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -85,21 +108,41 @@
     <section>
       <hr class="small" />
       <!-- Opis strony -->
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-md-7 d-flex align-items-center">
+      <div id="more-info" class="container py-5">
+        <div id="more-info2" class="row">
+          <div class="col-md-7 d-flex align-items-center py-2">
             <div>
+              <h4>
+                Szukasz profesjonalnej korekty lub składu tekstu? Chcesz, aby
+                tworzone przez Ciebie treści były dopracowane i przyjemne w
+                odbiorze? Jestem tu, aby Ci w tym pomóc!
+              </h4>
               <p class="lead">
-                Witaj na stronie “Strona po Stronie”! Jestem specjalistą od
-                słów, który pomaga przekształcić Twoje teksty w doskonałe
-                dzieła. Moja pasja to korekta tekstów, skład DTP, a przede
-                wszystkim praca z powieściami. Moje usługi nie kończą się jednak
-                na edycji i składzie. Jako doświadczony redaktor, jestem tu, aby
-                pomóc Ci udoskonalić Twoje pisanie na każdym etapie procesu.
-                Niezależnie od tego, czy potrzebujesz drobnej korekty, czy
-                kompleksowej redakcji, “Strona po Stronie” jest tu, aby pomóc Ci
-                osiągnąć perfekcję na papierze. Zapraszam do współpracy!
+                <br />
+                Niezależnie od tego, czy piszesz książki, artykuły, prace
+                dyplomowe, czy inne rodzaje tekstów, zadbam o to, aby były one
+                poprawne, spójne i zgodne z zasadami języka polskiego. Dodatkowo
+                oferuję pomoc w przygotowaniu publikacji do druku. Zajmę się
+                odpowiednim ułożeniem tekstu na stronie, doborem fontów,
+                odstępów, marginesów, ilustracji i innych elementów graficznych,
+                które uatrakcyjniają i ułatwiają czytanie. <br />
+                Jeśli chcesz dowiedzieć się więcej o mojej ofercie, zapraszam do
+                kontaktu. Z przyjemnością odpowiem na Twoje pytania i
+                przedstawię szczegóły współpracy.
               </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-center">
+                    <a
+                      href="#contact"
+                      class="btn btn-primary btn-custom"
+                      role="button"
+                    >
+                      Skontaktuj się
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-5">
@@ -114,106 +157,105 @@
         </div>
       </div>
       <hr class="small" />
-      <!-- Korekta -->
-      <div class="container py-5 c-backgroudn">
-        <div class="row">
-          <div class="col-md-5">
-            <img
-              width="500"
-              height="500"
-              src="https://plus.unsplash.com/premium_photo-1668198395296-035ad11ab16b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="img-thumbnail img-rounded img-responsive"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-7 d-flex align-items-center">
-            <div>
-              <h2 class="display-2 text-center c-text-header fw-semibold">
-                Korekta
-              </h2>
-              <p class="lead text-white">
-                Korekta tekstu to kluczowy etap w procesie tworzenia treści,
-                który gwarantuje, że Twój tekst jest wolny od błędów i jest
-                gotowy do publikacji. W “Strona po Stronie” specjalizujemy się w
-                dokładnej i skrupulatnej korekcie tekstów, koncentrując się na
-                gramatyce, interpunkcji, ortografii, stylu i spójności. Naszym
-                celem jest nie tylko wyeliminowanie błędów, ale także poprawa
-                płynności i czytelności tekstu, zachowując jednocześnie Twój
-                unikalny styl i ton. Niezależnie od tego, czy pracujesz nad
-                powieścią, artykułem czy innym rodzajem tekstu, nasza usługa
-                korekty zapewni, że Twój tekst będzie prezentować się
-                profesjonalnie i będzie wolny od błędów. Skontaktuj się z nami,
-                aby dowiedzieć się więcej o tym, jak możemy pomóc Ci udoskonalić
-                Twój tekst.
+      <!-- Oferta -->
+      <section id="offer" class="c-third-background">
+        <div class="container py-5">
+          <h2
+            class="c-secondary-text-header text-center display-5 fw-semibold pb-5"
+          >
+            Oferta
+            <hr style="width: 10%; margin: 0 auto" />
+          </h2>
+
+          <div class="row d-flex gap-3 justify-content-around">
+            <div
+              class="offer-box col text-center c-secondary-background p-3 rounded d-flex flex-column justify-content-between"
+            >
+              <div class="offer-content">
+                <i class="bi bi-eyeglasses fw-semibold display-5"></i>
+                <h2 class="c-text-header fw-semibold">Redakcja</h2>
+
+                <p class="lead text-center">
+                  Podczas redakcji, czyli pierwszego czytania, sprawdzam i
+                  poprawiam tekst pod względem merytorycznym, logicznym,
+                  stylistycznym i językowym. Analizuję tekst z perspektywy
+                  potencjalnego czytelnika i wskazuję, co można w nim ulepszyć.
+                  Dbam o to, aby tekst był poprawny, spójny i atrakcyjny.
+                  Sugeruję zmiany, które pomogą udoskonalić tekst, eliminuję
+                  błędy, nieścisłości, powtórzenia i zbędne informacje.
+                </p>
+              </div>
+
+              <div class="price">
+                <h5 class="lead">
+                  od <strong class="fw-semibold">15 zł </strong>za stronę*
+                </h5>
+                <h5 class="lead">
+                  od <strong class="fw-semibold">180 zł</strong> za arkusz**
+                </h5>
+              </div>
+            </div>
+            <!-- Korekta -->
+            <div
+              class="offer-box col-lg-4 c-secondary-background p-3 rounded text-center d-flex flex-column justify-content-between"
+            >
+              <div class="offer-content">
+                <i class="bi bi-pen fw-semibold display-5"></i>
+                <h2 class="c-text-header fw-semibold">Korekta</h2>
+
+                <p class="lead text-center">
+                  Podczas korekty, czyli drugiego czytania, zaznaczam błędy
+                  językowe: interpunkcyjne, leksykalne, fleksyjne, składniowe,
+                  stylistyczne, a także błędy składu, takie jak bękarty, szewce,
+                  wdowy, nieprawidłowa paginacja stron i inne.
+                </p>
+              </div>
+
+              <div class="price">
+                <h5 class="lead">
+                  od <strong class="fw-semibold">10 zł </strong>za stronę*
+                </h5>
+                <h5 class="lead">
+                  od <strong class="fw-semibold">140 zł</strong> za arkusz**
+                </h5>
+              </div>
+            </div>
+            <!-- Skład -->
+            <div
+              class="offer-box col text-center c-secondary-background p-3 rounded d-flex flex-column justify-content-between"
+            >
+              <div class="offer-content">
+                <i class="bi bi-laptop fw-semibold display-5"></i>
+                <h2 class="c-text-header fw-semibold">Skład DTP</h2>
+                <p class="lead text-center">
+                  Jako grafik DTP dobieram krój i stopień pisma, ustalam
+                  szerokość marginesów i wielkość interlinii, a także planuję
+                  wygląd wszystkich dodatkowych elementów publikacji. Celem
+                  składu jest ułatwienie czytania tekstu i zwiększenie jego
+                  atrakcyjności.
+                </p>
+              </div>
+
+              <h5 class="lead">
+                od <strong class="fw-semibold">100 zł</strong> za arkusz**
+              </h5>
+            </div>
+            <div class="offer-box col-xl-12 c-secondary-background p-3 rounded">
+              <p class="lead text-center">
+                * strona znormalizowana – 1800 znaków ze spacjami <br />**
+                arkusz wydawniczy – 40 000 znaków ze spacjami <br /><br />
+                Podane ceny są orientacyjne, a każde zlecenie wyceniam
+                indywidualnie. Do przygotowania wyceny potrzebuję od Ciebie
+                kilku informacji: rodzaj treści, długość, czyli ilość znaków ze
+                spacjami, termin realizacji, a także czy tekst był już wcześniej
+                sprawdzany przez kogoś innego. Możesz od razu przesłać mi próbkę
+                swojego tekstu o długości 3000–5000 znaków ze spacjami. Pozwoli
+                mi ona ustalić, ile pracy będzie mnie czekało nad tekstem.
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <hr class="small" />
-      <!-- Skład DTP -->
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-md-7 d-flex align-items-center">
-            <div>
-              <h2 class="display-2 text-center c-text-header fw-semibold">
-                Skład DTP
-              </h2>
-              <p class="lead">
-                Jako specjalista od składu DTP, łączę precyzję, kreatywność i
-                doświadczenie, aby przekształcić Twoje treści w profesjonalnie
-                wyglądające publikacje. Zajmuję się składem książek, broszur,
-                magazynów i innych materiałów drukowanych, dbając o każdy
-                szczegół, aby zapewnić najwyższą jakość. Moja praca to
-                połączenie sztuki i technologii, które przekłada się na estetykę
-                i czytelność Twoich publikacji. Skontaktuj się ze mną, aby
-                dowiedzieć się więcej.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <img
-              width="500"
-              height="500"
-              src="./assets/image/sincerely-media-BfriYg0iOCs-unsplash.jpg"
-              class="img-thumbnail img-rounded img-responsive"
-              alt="..."
-            />
-          </div>
-        </div>
-      </div>
-      <hr class="small" />
-      <!-- Redakcja -->
-      <div class="container py-5 c-backgroudn">
-        <div class="row">
-          <div class="col-md-5">
-            <img
-              width="500"
-              height="500"
-              src="https://plus.unsplash.com/premium_photo-1668198395296-035ad11ab16b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="img-thumbnail img-rounded img-responsive"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-7 d-flex align-items-center">
-            <div>
-              <h2 class="display-2 text-center c-text-header fw-semibold">
-                Redakcja Tekstu - Tworzę Czystość i Jasność Twoich Słów
-              </h2>
-              <p class="lead text-white">
-                Jako doświadczony redaktor, skupiam się na dopracowaniu Twojego
-                tekstu do perfekcji. Moja praca polega na upewnieniu się, że
-                Twoje słowa są jasne, zrozumiałe i wolne od błędów. Zajmuję się
-                redakcją różnego rodzaju tekstów, od artykułów i książek, po
-                raporty i dokumenty biznesowe. Moim celem jest poprawa
-                struktury, stylu i tonu Twojego tekstu, zachowując jednocześnie
-                Twoją unikalną głos. Skontaktuj się ze mną, aby dowiedzieć się
-                więcej.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
       <!-- O mnie -->
       <hr class="small" />
       <section id="about">
@@ -221,7 +263,7 @@
           <div class="row">
             <div class="col-md-7 d-flex align-items-center">
               <div>
-                <h2 class="display-2 text-center c-text-header fw-semibold">
+                <h2 class="display-5 text-center c-text-header fw-semibold">
                   O mnie
                 </h2>
                 <p class="lead">
@@ -302,80 +344,110 @@
         </div>
       </section>
       <!-- Koniec Galerii -->
-      <!-- Kartka -->
-      <!-- <div class="card mb-3" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="./assets/image/ksiazka-zielonka.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </section>
+    <hr class="small" />
     <!-- Kontakt -->
-    <section id="contact" class="container mt-5">
-      <h1 class="display-3 text-center">Skontaktuj się ze mną</h1>
-      <form class="row g-3">
-        <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Imię" required />
-        </div>
-        <div class="col-md-6">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Nazwisko"
-            required
-          />
-        </div>
-        <div class="col-md-6">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Tytuł"
-            required
-          />
-        </div>
-        <div class="col-md-6">
-          <input
-            type="email"
-            class="form-control"
-            placeholder="Email"
-            required
-          />
-        </div>
-        <div class="col-md-12">
-          <div class="form-floating">
-            <textarea
-              class="form-control"
-              id="floatingTextarea2"
-              style="height: 100px"
-              required
-            ></textarea>
+    <section id="contact">
+      <div class="container py-5">
+        <div class="row">
+          <h1 class="display-5 text-center py-5 c-text-header fw-semibold">
+            Skontaktuj się ze mną
+          </h1>
+          <div class="col-md-5 py-md-4 text-center">
+            <p>
+              Masz pytania czy wątpliwości? Pisz do mnie śmiało pod poniższy
+              adres lub skorzystaj z formularza kontaktowego!
+            </p>
+
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href="mailto:izabela.stronapostronie@gmail.com"
+                  ><i class="bi bi-envelope px-1"></i>
+                  izabela.stronapostronie@gmail.com</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="col-md-12 d-flex py-4 justify-content-center">
-            <button type="submit" class="btn btn-primary">Wyślij</button>
+          <div class="col-md-7">
+            <form class="row g-3" id="contact-form">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Imię"
+                  name="user_name"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  name="user_email"
+                  class="form-control"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <div class="col-md-12">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    placeholder="Wiadomość"
+                    style="height: 140px"
+                    required=""
+                  ></textarea>
+                </div>
+                <div
+                  class="col-md-12 d-flex py-4 justify-content-center mx-auto"
+                >
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-custom"
+                    style="--bs-btn-padding-x: 5rem"
+                  >
+                    Wyślij wiadomość
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-      </form>
+      </div>
     </section>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-muted"
+            >© 2024 <i class="bi bi-book-half px-1"></i> Strona po stronie</span
+          >
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              class="text-muted"
+              href="https://www.facebook.com/profile.php?id=61555588812737"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+
+          <li class="ms-3">
+            <a
+              class="text-muted"
+              href="https://www.instagram.com/izabela_stronapostronie?igsh=bm92cmtlYjR6eDU="
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
 
     <script src="./scripts/main.js"></script>
   </body>
