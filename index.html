@@ -116,7 +116,7 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
       </div>
     </section>
     <section>
-      <hr class="small" />
+      <!-- <hr class="small" /> -->
       <!-- Opis strony -->
       <div id="more-info" class="container py-5">
         <div id="more-info2" class="row mx-2">
@@ -166,7 +166,7 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
           </div>
         </div>
       </div>
-      <hr class="small" />
+      <!-- <hr class="small" /> -->
       <!-- Oferta -->
       <section id="offer" class="c-third-background">
         <div class="container p-5">
@@ -266,7 +266,7 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
           </div>
         </div>
       </section>
-      <hr class="small" />
+      <!-- <hr class="small" /> -->
       <!-- Przykład składu DTP -->
       <section>
         <h2 class="display-5 text-center c-text-header fw-semibold py-3">
@@ -332,14 +332,17 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
       </section>
 
       <!-- O mnie -->
-      <hr class="small" />
-      <section id="about">
+      <!-- <hr class="small" /> -->
+      <section id="about" style="background-color: #c7cdc7">
         <div class="container py-5">
           <div class="row mx-2">
             <div class="col-md-7 d-flex align-items-center">
               <div>
-                <h2 class="display-5 text-center c-text-header fw-semibold">
+                <h2
+                  class="c-secondary-text-header text-center display-5 fw-semibold pb-5"
+                >
                   O mnie
+                  <hr style="width: 10%; margin: 0 auto" />
                 </h2>
                 <p class="lead">
                   Cześć, mam na imię Izabela i zajmuję się korektą, redakcją i
@@ -375,7 +378,7 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
           </div>
         </div>
       </section>
-      <hr class="small" />
+      <!-- <hr class="small" /> -->
       <!-- Kompetencje -->
       <section id="skills">
         <div class="container py5 text-center">
@@ -421,7 +424,7 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
         </div>
       </section>
     </section>
-    <hr class="small" />
+    <!-- <hr class="small" /> -->
 
     <!-- Kontakt -->
     <section id="contact">
@@ -495,36 +498,40 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
         </div>
       </div>
     </section>
+    <!-- Footer -->
+    <section class="c-backgroudn">
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-light"
+              >© 2024 <i class="bi bi-book-half px-1"></i> Strona po
+              stronie</span
+            >
+          </div>
 
-    <div class="container">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-      >
-        <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-muted"
-            >© 2024 <i class="bi bi-book-half px-1"></i> Strona po stronie</span
-          >
-        </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-light"
+                href="https://www.facebook.com/profile.php?id=61555588812737"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </li>
 
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a
-              class="text-muted"
-              href="https://www.facebook.com/profile.php?id=61555588812737"
-              ><i class="bi bi-facebook"></i
-            ></a>
-          </li>
+            <li class="ms-3">
+              <a
+                class="text-light"
+                href="https://www.instagram.com/izabela_stronapostronie?igsh=bm92cmtlYjR6eDU="
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
 
-          <li class="ms-3">
-            <a
-              class="text-muted"
-              href="https://www.instagram.com/izabela_stronapostronie?igsh=bm92cmtlYjR6eDU="
-              ><i class="bi bi-instagram"></i
-            ></a>
-          </li>
-        </ul>
-      </footer>
-    </div>
     <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
