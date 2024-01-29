@@ -14,16 +14,26 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
+"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/style.css" />
+
     <script
-      defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script
+    <!-- <script
       defer
       src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"
+    ></script> -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"
     ></script>
     <script
       type="text/javascript"
@@ -91,7 +101,7 @@
             <h1 class="fw-semibold display-1 c-text-header">
               STRONA PO STRONIE
             </h1>
-            <h5 class="">Miejsce w którym Twój tekst staje się piękniejszy</h5>
+            <!-- <h5 class="">Miejsce w którym Twój tekst staje się piękniejszy</h5> -->
             <div class="container py-3">
               <a
                 href="#more-info"
@@ -159,7 +169,7 @@
       <hr class="small" />
       <!-- Oferta -->
       <section id="offer" class="c-third-background">
-        <div class="container py-5">
+        <div class="container p-5">
           <h2
             class="c-secondary-text-header text-center display-5 fw-semibold pb-5"
           >
@@ -256,6 +266,71 @@
           </div>
         </div>
       </section>
+      <hr class="small" />
+      <!-- Przykład składu DTP -->
+      <section>
+        <h2 class="display-5 text-center c-text-header fw-semibold py-3">
+          Galeria składu
+        </h2>
+        <div class="container d-flex justify-content-center">
+          <div class="row m-5">
+            <div class="col-lg-4">
+              <a
+                href="./assets/image/mniejsze strony/1Duch z Canterville ptak_page-0001.jpg"
+                data-lightbox="image-1"
+                data-title="Duch z Canterville"
+                ><img
+                  class="img-fluid m-2 offer-box rounded"
+                  src="./assets/image/mniejsze strony/1Duch z Canterville ptak_page-0001.jpg"
+                  alt=""
+              /></a>
+              <a
+                href="./assets/image/mniejsze strony/2Duch z Canterville rozkładówka_page-0001.jpg"
+                data-lightbox="image-1"
+                data-title="Duch z Canterville"
+              >
+                <img
+                  class="img-fluid m-2 offer-box rounded"
+                  src="./assets/image/mniejsze strony/2Duch z Canterville rozkładówka_page-0001.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col">
+              <a
+                href="./assets/image/mniejsze strony/5Dziwne losy Jane Eyre rozkładówka_page-0001 (1).jpg"
+                data-lightbox="image-1"
+                data-title="Dziwne losy Jane Eyre"
+                ><img
+                  class="img-fluid m-2 offer-box rounded"
+                  src="./assets/image/mniejsze strony/5Dziwne losy Jane Eyre rozkładówka_page-0001 (1).jpg"
+                  alt=""
+              /></a>
+              <a
+                href="./assets/image/mniejsze strony/4Dziwne losy Jane Eyre asteryski_page-0001.jpg"
+                data-lightbox="image-1"
+                data-title="Dziwne losy Jane Eyre"
+              >
+                <img
+                  class="img-fluid m-2 offer-box rounded"
+                  src="./assets/image/mniejsze strony/4Dziwne losy Jane Eyre asteryski_page-0001.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col d-flex align-items-center">
+              <a
+                href="./assets/image/mniejsze strony/5Dziwne losy Jane Eyre rozkładówka_page-0001 (1).jpg"
+                data-lightbox="image-1"
+                data-title="Dziwne losy Jane Eyre"
+                ><img
+                  class="img-fluid m-2 offer-box rounded"
+                  src="./assets/image/mniejsze strony/3Dziwne losy Jane Eyre 5_page-0001.jpg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- O mnie -->
       <hr class="small" />
       <section id="about">
@@ -306,12 +381,12 @@
           <div class="row">
             <a
               class="col-md-12 col-lg-4 img-fluid py-2"
-              href="./assets/image/akademia_korekty.png"
-              data-toggle="lightbox"
-              data-gallery="photo_gallery"
+              href="./assets/image/certyfikat-IS.jpg"
+              data-lightbox="image-2"
+              data-title="Certyfikat Akademia korekty tekstu"
             >
               <img
-                src="./assets/image/akademia_korekty.png"
+                src="./assets/image/certyfikat-IS.jpg"
                 alt="random img"
                 class="img-fluid"
               />
@@ -319,8 +394,8 @@
             <a
               class="col-md-12 col-lg-4 img-fluid py-2 d-flex align-items-center"
               href="./assets/image/certyfikat_dtp.png"
-              data-toggle="lightbox"
-              data-gallery="photo_gallery"
+              data-lightbox="image-2"
+              data-title="Projektowanie DTP"
             >
               <img
                 src="./assets/image/certyfikat_dtp.png"
@@ -331,8 +406,8 @@
             <a
               class="col-md-12 col-lg-4 img-fluid py-2"
               href="./assets/image/polish_cultural_fundation_referencje.png"
-              data-toggle="lightbox"
-              data-gallery="photo_gallery"
+              data-lightbox="image-2"
+              data-title="Polish Cultural Foundation"
             >
               <img
                 src="./assets/image/polish_cultural_fundation_referencje.png"
@@ -346,6 +421,7 @@
       <!-- Koniec Galerii -->
     </section>
     <hr class="small" />
+
     <!-- Kontakt -->
     <section id="contact">
       <div class="container py-5">
@@ -448,7 +524,7 @@
         </ul>
       </footer>
     </div>
-
+    <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

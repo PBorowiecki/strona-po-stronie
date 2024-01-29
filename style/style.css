@@ -7,6 +7,7 @@ body {
   overflow-x: hidden;
   font-family: "Catamaran";
   background-color: rgb(246, 248, 246);
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
 }
 .bg-img {
   height: 100vh;
@@ -116,4 +117,9 @@ box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1); */
   -webkit-box-shadow: 8px 8px 24px 0px rgb(79, 80, 79);
   -moz-box-shadow: 8px 8px 24px 0px rgb(59, 61, 59);
   box-shadow: 8px 8px 24px 0px rgb(24, 27, 24);
+}
+
+.carousel-image {
+  max-height: 600px;
+  max-width: 400px;
 }
