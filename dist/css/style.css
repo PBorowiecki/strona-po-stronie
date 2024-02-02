@@ -102,6 +102,6 @@ textarea {
 }
 @media (max-width: 500px) {
   .sm-padding {
-    padding: 25px !important;
+    padding: 17px !important;
   }
 }
