@@ -34,7 +34,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0)
     ),
-    url(/assets/image/zielona_ksiażka.jpg);
+    url(../../assets/image/zielona_ksiażka.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
