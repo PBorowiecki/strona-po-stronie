@@ -18,7 +18,7 @@ body {
   background-color: #f6f8f6;
   font-size: clamp(1.125rem, 2vw, 1.25rem);
 }
-.bg-img {
+/* .bg-img {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
@@ -26,7 +26,20 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+} */
+
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    ),
+    url(/assets/image/zielona_ksiażka.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+
 .navbar {
   transition: 0.5s;
 }
@@ -94,6 +107,9 @@ textarea {
   .small-p {
     font-size: 16px !important;
   }
+  .hero {
+    justify-content: center;
+  }
 }
 @media (max-width: 990px) {
   .navbar {
@@ -105,3 +121,43 @@ textarea {
     padding: 17px !important;
   }
 }
+@media (max-width: 436px) {
+  .no-pdg {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+@media (max-width: 341px) {
+  .navbar-brand,
+  .nav-link {
+    font-size: 16px !important;
+  }
+  .navbar-toggler-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .contact-email {
+    word-wrap: break-word;
+  }
+}
+@media (max-width: 281px) {
+  .footer-title,
+  .footer-icon {
+    font-size: 14px !important;
+  }
+
+  .footer .container {
+    padding: 0 8px !important;
+  }
+}
+
+/* @media only screen and (max-width: 767px) {
+  .hero {
+    
+    background-image: url(/assets/image/lue-open-book-on-marble-table-15046.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+} */

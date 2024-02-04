@@ -46,11 +46,11 @@
     </script>
   </head>
   <body>
-    <img
+    <!-- <img
       class="bg-img d-md-block"
-      src="./assets/image/zielona_ksiażka.jpg"
+      src="./assets/image/niebieska ksiazka.jpg"
       alt="Zielona książka"
-    />
+    /> -->
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -90,10 +90,10 @@
         </div>
       </div>
     </nav>
-    <section id="hero">
-      <!-- Zdjęcie główne i tytuł -->
+    <!-- Zdjęcie główne i tytuł -->
+    <section id="hero" class="hero">
       <div
-        class="container min-vh-100 d-flex align-items-center text-center"
+        class="hero container min-vh-100 d-flex align-items-center text-center"
         id="navbar"
       >
         <div class="row">
@@ -272,9 +272,9 @@
         <h2 class="display-5 text-center c-text-header fw-semibold pt-5">
           Galeria składu
         </h2>
-        <div class="container d-flex justify-content-center">
+        <div class="container d-flex justify-content-center no-pdg">
           <div class="row m-5">
-            <div class="col-lg-4">
+            <div class="col-lg-4 no-pdg">
               <a
                 href="./assets/image/DTP/1_Duch z Canterville, ptak.jpg"
                 data-lightbox="image-1"
@@ -295,7 +295,7 @@
                   alt='"Duch z Canterville". Rozkładówka'
               /></a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 no-pdg">
               <a
                 href="./assets/image/DTP/3_Dziwne losy Jane Eyre, rozkładówka.jpg"
                 data-lightbox="image-1"
@@ -316,7 +316,7 @@
                   alt='"Dziwne losy Jane Eyre". Asteryski'
               /></a>
             </div>
-            <div class="col d-flex align-items-center">
+            <div class="col d-flex align-items-center no-pdg">
               <a
                 href="./assets/image/DTP/5_Dziwne losy Jane Eyre, rozdział 1.jpg"
                 data-lightbox="image-1"
@@ -429,9 +429,11 @@
 
     <!-- Kontakt -->
     <section id="contact">
-      <div class="container py-5">
+      <div class="container py-5 no-pdg">
         <div class="row mx-2">
-          <h2 class="display-5 text-center py-5 c-text-header fw-semibold">
+          <h2
+            class="display-5 text-center py-5 c-text-header fw-semibold text-break no-pdg"
+          >
             Skontaktuj się ze mną
           </h2>
           <div class="col py-md-4 text-center small-p">
@@ -443,7 +445,7 @@
             <ul class="list-unstyled">
               <li>
                 <a
-                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-6 fw-medium"
+                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-6 fw-medium contact-email"
                   href="mailto:izabela.stronapostronie@gmail.com"
                   ><i class="bi bi-envelope"></i>
                   izabela.stronapostronie@gmail.com</a
@@ -496,13 +498,13 @@
       </div>
     </section>
     <!-- Footer -->
-    <section class="c-backgroudn">
+    <section class="footer c-backgroudn">
       <div class="container">
         <footer
           class="d-flex flex-wrap justify-content-between align-items-center py-3"
         >
           <div class="col-md-4 d-flex align-items-center">
-            <span class="text-light fs-6"
+            <span class="footer-title text-light fs-6"
               >© 2024 <i class="bi bi-book-half px-1"></i> Strona po
               stronie</span
             >
@@ -513,7 +515,7 @@
               <a
                 class="text-light"
                 href="https://www.facebook.com/profile.php?id=61555588812737"
-                ><i class="bi bi-facebook"></i
+                ><i class="footer-icon bi bi-facebook"></i
               ></a>
             </li>
 
@@ -521,7 +523,7 @@
               <a
                 class="text-light"
                 href="https://www.instagram.com/izabela_stronapostronie?igsh=bm92cmtlYjR6eDU="
-                ><i class="bi bi-instagram"></i
+                ><i class="footer-icon bi bi-instagram"></i
               ></a>
             </li>
           </ul>
