@@ -6,7 +6,8 @@
 }
 .c-secondary-text-header,
 .nav-link {
-  color: #f6f8f6;
+  /* color: #f6f8f6; */
+  color: white;
 }
 html {
   scroll-behavior: smooth;
@@ -18,15 +19,6 @@ body {
   background-color: #f6f8f6;
   font-size: clamp(1.125rem, 2vw, 1.25rem);
 }
-/* .bg-img {
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-} */
 
 .hero {
   background-image: linear-gradient(
@@ -46,6 +38,7 @@ body {
 .nav-link {
   font-weight: 600;
   font-size: large;
+  padding-top: 7px;
 }
 .nav-link:hover {
   border-bottom: 1px solid #9c6600;
@@ -103,6 +96,27 @@ textarea {
   color: #000;
 }
 
+.arrow-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 18px;
+  transition: 0.5s;
+  animation-name: move-up-left;
+  animation-duration: 0.5s;
+}
+
+.arrow-up:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 @media (max-width: 1024px) {
   .hero {
     justify-content: center;
@@ -114,7 +128,7 @@ textarea {
   }
 }
 @media (max-width: 500px) {
-  .offer-title {
+  .section-header-offer {
     padding-top: 1.6rem;
   }
   .small-p {
@@ -154,39 +168,33 @@ textarea {
   }
 }
 
-/* @media only screen and (max-width: 767px) {
-  .hero {
-    
-    background-image: url(/assets/image/lue-open-book-on-marble-table-15046.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-} */
-
-/* .scroll-animation {
-  animation: fade linear both;
-  animation-timeline: view();
-  animation-range: entry 50% cover 50%;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
-h2::after {
+.hero-subtitle::after {
   content: "";
   display: block;
-  width: 20%;
+  width: 50%;
   height: 1px;
   margin: 5px auto;
   background-color: #9c6600;
+}
+
+.offer-content-title::after,
+.section-header::after {
+  content: "";
+  display: block;
+  width: 3em;
+  height: 1px;
+  margin: 5px auto;
+  background-color: #9c6600;
+}
+
+.section-header-offer::after,
+.section-header-about::after {
+  content: "";
+  display: block;
+  width: 3em;
+  height: 1px;
+  margin: 5px auto;
+  background-color: white;
 }
 
 @keyframes move-up-left {
@@ -198,25 +206,4 @@ h2::after {
     bottom: 20px;
     right: 25px;
   }
-}
-
-.arrow-up {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 25px;
-  z-index: 99;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 4px;
-  color: white;
-  cursor: pointer;
-  padding: 8px;
-  font-size: 18px;
-  transition: 0.5s;
-  animation-name: move-up-left;
-  animation-duration: 0.5s;
-}
-
-.arrow-up:hover {
-  background-color: rgba(0, 0, 0, 0.6);
 }
