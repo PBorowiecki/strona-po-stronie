@@ -98,7 +98,7 @@ textarea {
   position: fixed;
   bottom: 20px;
   right: 25px;
-  z-index: 99;
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   color: #fff;
@@ -214,4 +214,15 @@ textarea {
   width: auto;
   height: 2.5em;
   vertical-align: -5px;
+}
+
+#cb-cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 998;
+  border-radius: 0;
+  display: none;
+  background-color: #f6f8f6;
 }
